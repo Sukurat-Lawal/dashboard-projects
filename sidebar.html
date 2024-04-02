@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome -->
+    <style>
+body {
+    margin: 0;
+    font-family:"Arial" snas-serif;   
+    background-color: #E5E4E2;
+    
+    
+    }
+
+nav {
+        margin-left: 200px;
+        background-color:#FFFFFF;
+    }
+
+nav ul {
+ list-style-type: none;
+ margin: 0 5px;
+ padding: 20px;
+ display: flex;
+ align-items: center;
+    }
+nav ul li {
+     margin: 0 10px;
+        
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.search-form input[type="text"] {       
+        padding: 8px;
+        border: none;
+        border-radius: 16px;
+        width:450px;
+        background-color: rgb(226,232,240);
+    
+}
+
+h4 {
+    margin-left: 600px;
+}
+        
+.btn {
+    padding: 8px 15px;
+    background-color: #1992D4;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align:center;
+    width: 100px;
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    background-color: #1992D4;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    display: block;
+    font-weight: bold;
+}
+
+.sidenav i {
+    color:#fff;
+    padding: 10px;
+}
+
+h1 {
+    font-size: 1.8em; 
+    color: white; 
+    margin-bottom: 10px; 
+}
+
+
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 200px;
+    
+}
+.card {
+    width: 400px;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: -10px 0 5px -8px gold;
+    background-color: #FFF;
+}
+
+
+.card-containers {
+margin-left: 1200px;
+display: block;
+}
+
+.card3 {
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    position: relative;
+    top: -730px;
+    margin:20px;
+    background-color: #FFF;
+}
+
+.text {
+    position: absolute;
+    top: -27px;
+    left: 39%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.iocn {
+    margin-right: 80%;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 14px;}
+}
+.cont {
+    display: flex; /*use flexbox layout */
+    align-items: center; /* Align items vertically in the center */
+}
+
+</style>
+ </head>
+</body>
+
+
+    
+<div class="sidenav">
+    <h1><i class="fa-regular fa-grid-horizontal" aria-hidden="true"></i>Dashboard </h1>
+    <a href="#home"><i class="fa fa-home" aria-hidden="true"> Home</i></a>
+    <a href="#profile"><i class="fa fa-user" aria-hidden="true">Profile</i></a>
+    <a href="messages"><i class="fa fa-comment" aria-hidden="true"></i>Messages</a>
+    <a href="history"><i class="fa fa-history" aria-hidden="true">History</i></a>
+    <a href="tasks"><i class="fa fa-tasks" aria-hidden="true"> Tasks</i></a>
+    <a href="communities"><i class="fa fa-users" aria-hidden="true"> Communities</i></a>
+   <a href="settings"><i class="fa fa-cog" aria-hidden="true"></i> Settings</a>
+   <a href="support"><i class="fa fa-question" aria-hidden="true">Support</i></a>
+   <a href="privacy"><i class="fa fa-user-secret" aria-hidden="true"></i>Privacy</a>
+   </div>
+
+   <nav>
+    <ul>
+        <li>
+   <form action="#" class="search-form">
+    <i class="fas fa-search"></i>
+    <input type="text">
+</form>
+</li>
+<li><i class="fa fa-bell" aria-hidden="true"></i></li>
+<li>
+    <h4>Morgan Oakley</h4>
+</li>
+</ul>
+
+<ul>
+<li>
+    <p>Hi there, <br>Morgan Oakley(@morgan)<br></p>
+</li>
+   
+     <li><a href="#" class="btn">New</a></li>
+     <li><a href="#" class="btn">Upload</a></li>
+     <li><a href="#" class="btn">Share</a></li>
+</ul>
+</nav>
+<div class="card-container">
+    <div class="card"> 
+    <h3>Super cool project</h3>
+    <p>Sed tempus ut lacus et scelerisque.Suspendisse sollicitudin nibh erat, id facilisis felis accumsan</p>
+    <i class="fa fa-star-o" aria-hidden="true"></i>
+    <i class="fa fa-share-alt" aria-hidden="true"></i>
+    <i class="fa fa-eye" aria-hidden="true"></i>
+   
+   </div>
+   <div class="card">
+    <h3>Less Cool Project</h3>
+    <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, variud pellentesque lacus</p>
+    <i class="fa fa-share-alt" aria-hidden="true"></i>  
+    <i class="fa fa-eye" aria-hidden="true"></i>
+</div>
+   <div class="card">
+    <h3>Impossibe App</h3>
+    <p>In hac habitass platea dictumst. Vivamus dictum arcu, a placerat velit segittis id.</p>
+    <i class="fa fa-share-alt" aria-hidden="true"></i>
+    <i class="fa fa-eye" aria-hidden="true"></i>
+   </div>
+   <div class="card">
+    <h3>Ad Blocker</h3>
+    <p>Quisque eget rutrum nisi. Nam augue justo, cursus vitea metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
+    <i class="fa fa-share-alt" aria-hidden="true"></i>
+    <i class="fa fa-eye" aria-hidden="true"></i>
+</div>
+   <div class="card">
+    <h3>Ad Blocker</h3>
+    <p>Quisque eget rutrum nisi. Nam augue justo, cursus vitea metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
+    <i class="fa fa-share-alt" aria-hidden="true"></i>   
+    <i class="fa fa-eye" aria-hidden="true"></i>
+</div>
+   <div class="card">
+    <h3>Money Maker</h3>
+    <p>Praesent conaliis, libero quis congue elementum, nunc ante faucibus spien, ac scelerique tortot perus sit amet ex. Pellentesque molis nec sem vel aliuam</p>.</p>
+    <i class="fa fa-share-alt" aria-hidden="true"></i> 
+    <i class="fa fa-eye" aria-hidden="true"></i> 
+</div>
+</div>
+<div class="card-containers">
+    <div class="card3">
+        <div class="text">Announcements</div>
+     <h3>site Management</h3>
+     <p>Vestibitum condieentium tellis lacsu, in accumsan elit maximus ac.  Donac hendrerit sodales congue..</p>
+     <h3>Community Share Day</h3>
+        <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accunsan portitor</p>
+        <h3>Updated Privacy Policy</h3>
+        <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum amte anctor. Cras fringilla sagittis sem in mattis...</p>
+</div>
+    
+     <div class="card3"> 
+        <div class="text">Trending</div>
+            <h3><i class="fab fa-waze"></i>@tegan</h3>
+            <p>World Peace Builder </p>
+            <h3><i class="fab fa-waze"></i>@morgan</h3>
+               <p>Super Cool Project</p>
+               <h3><i class="fab fa-waze"></i>@Kendall</h3>
+               <p>Life Changing App </p>
+
+               <h3><i class="fab fa-waze"></i>@alex</h3>
+               <p>No Traffic Maker</p>
+    </div>
+
+</div>
+</html>
